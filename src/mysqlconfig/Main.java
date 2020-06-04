@@ -16,7 +16,7 @@ public class Main {
      */
     public static void main(String[] args) {
         MysqlConfig_vulembere config = new MysqlConfig_vulembere("localhost", "mysql", "root", "", 3306);
-        config.newUser("Nouvelle BD", "Nouveau Utilisateur", "Son mot de passe");
+        config.newUser("BD1", "BD1", "passe");
         if (config.getCon() != null) {
             config.createDatabase();
             config.createUser();
