@@ -29,6 +29,70 @@ public class MysqlConfig_vulembere {
     private String newBd = null;
     private String newPassword = null;
 
+    public String getServeur() {
+        return serveur;
+    }
+
+    public void setServeur(String serveur) {
+        this.serveur = serveur;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getBd() {
+        return bd;
+    }
+
+    public void setBd(String bd) {
+        this.bd = bd;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
+    }
+
+    public String getNewUser() {
+        return newUser;
+    }
+
+    public void setNewUser(String newUser) {
+        this.newUser = newUser;
+    }
+
+    public String getNewBd() {
+        return newBd;
+    }
+
+    public void setNewBd(String newBd) {
+        this.newBd = newBd;
+    }
+
+    public String getNewPassword() {
+        return newPassword;
+    }
+
+    public void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
+    }
+
     /**
      * *
      * Constructeur d'initialisation de la configuration du serveur
@@ -48,7 +112,7 @@ public class MysqlConfig_vulembere {
         if (con == null) {
             this.con = connecter();
         } else {
-            System.out.println("Connexion exister...");
+            System.out.println("Connexion exist...");
         }
 
     }
